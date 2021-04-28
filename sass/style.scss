@@ -11,14 +11,17 @@ div {
 }
 
 h1, h2 {
-    color: #12e6c8;
     font-family: 'Jomhuria';
+    letter-spacing: 0.3rem;
 }
 
 h1 {
     font-size: 72px;
 }
 
+h2 {
+    color: #12e6c8;
+}
 
 .container {
     display: flex;
@@ -27,7 +30,6 @@ h1 {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    padding: 0 144px;
     margin: 0;
     height: 100vh;
 
@@ -53,10 +55,22 @@ h1 {
         background: inherit;
         height: 150px;
         width: 20%;
-        box-shadow: 2px 7px #a287f4;
+        box-shadow: 3px 5px #a68bf870;
         color: white;
         outline: none;
-        font-size: 48px;
+        font-size: 1.2rem;
         font-family: 'Roboto', monospace;
+
+        &:hover {
+            color: #12e6c8;
+            background-color: #a287f4;
+            cursor: pointer;
+            box-shadow: none;
+            border-color: #12e6c8;
+        }
+
+        &:active {
+            top: 3px;
+        }
     }
 }
