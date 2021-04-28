@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Roboto:wght@300;400&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', monospace;
+}
+
+div {
+    padding: 12px 0;
+}
+
+h1, h2 {
+    color: #12e6c8;
+    font-family: 'Jomhuria';
+}
+
+h1 {
+    font-size: 72px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0 144px;
+    margin: 0;
+    height: 100vh;
+
+    .titlebox {
+        span {
+            color: #a287f4;
+        }
+    }
+
+}
+
+#messages {
+    color: #a287f4;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    button {
+        border: 2px dashed #a287f4;
+        background: inherit;
+        height: 150px;
+        width: 20%;
+        box-shadow: 2px 7px #a287f4;
+        color: white;
+        outline: none;
+        font-size: 48px;
+        font-family: 'Roboto', monospace;
+    }
+}

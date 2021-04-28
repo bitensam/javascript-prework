@@ -1,2 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Roboto:wght@300;400&display=swap");
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', monospace;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+div {
+  padding: 12px 0;
+}
+
+h1, h2 {
+  color: #12e6c8;
+  font-family: 'Jomhuria';
+}
+
+h1 {
+  font-size: 72px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 0 144px;
+  margin: 0;
+  height: 100vh;
+}
+
+.container .titlebox span {
+  color: #a287f4;
+}
+
+#messages {
+  color: #a287f4;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#buttons button {
+  border: 2px dashed #a287f4;
+  background: inherit;
+  height: 150px;
+  width: 20%;
+  box-shadow: 2px 7px #a287f4;
+  color: white;
+  outline: none;
+  font-size: 48px;
+  font-family: 'Roboto', monospace;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx3R0FBWTtBQUVaO0VBQ0ksdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixnQ0FBZ0M7QUNBcEM7O0FER0E7RUFDSSxlQUFlO0FDQW5COztBREdBO0VBQ0ksY0FBYztFQUNkLHVCQUF1QjtBQ0EzQjs7QURHQTtFQUNJLGVBQWU7QUNBbkI7O0FESUE7RUFDSSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixzQkFBc0I7RUFDdEIsa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsU0FBUztFQUNULGFBQWE7QUNEakI7O0FEUkE7RUFhWSxjQUFjO0FDRDFCOztBRE9BO0VBQ0ksY0FBYztBQ0psQjs7QURPQTtFQUNJLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IsV0FBVztBQ0pmOztBRENBO0VBTVEsMEJBQTBCO0VBQzFCLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsVUFBVTtFQUNWLDJCQUEyQjtFQUMzQixZQUFZO0VBQ1osYUFBYTtFQUNiLGVBQWU7RUFDZixnQ0FBZ0M7QUNIeEMiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

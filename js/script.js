@@ -1,17 +1,11 @@
-// wymienione zmienne
+//deklaracja stałych i przypisane do elementow po id
 
-var argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
 
-// przypisane zmiennych do elementow po id
+const buttonRock = document.getElementById('button-rock');
 
-buttonTest = document.getElementById('button-test');
+const buttonPaper = document.getElementById('button-paper');
 
-buttonRock = document.getElementById('button-rock');
-
-buttonPaper = document.getElementById('button-paper');
-
-buttonScissors = document.getElementById('button-scissors');
-
+const buttonScissors = document.getElementById('button-scissors');
 
 
 /**
@@ -22,10 +16,10 @@ function buttonClicked(argButtonName) {
     clearMessages();
     console.log(argButtonName + ' został kliknięty');
 
-    var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+    let argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 
     /**
-     * Describe this function...
+     * Przypisanie wylosowanego numeru do odpowiedniej wartości: kamien papier nozyce
      */
     function getMoveName(argMoveId) {
         console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
