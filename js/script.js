@@ -23,14 +23,17 @@ function buttonClicked(argButtonName) {
      */
     function getMoveName(argMoveId) {
         console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
-        if (argMoveId == 1) {
+
+        const id = Number(argMoveId);
+
+        if (id === 1) {
             return 'kamień';
-        } else if (argMoveId == 2) {
+        } else if (id === 2) {
             return 'papier';
-        } else if (argMoveId == 3) {
+        } else if (id === 3) {
             return 'nożyce';
         } else {
-            printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
+            printMessage('Nie znam ruchu o id ' + id + '. Zakładam, że chodziło o "kamień".');
             return 'kamień';
         }
     }
@@ -40,18 +43,22 @@ function buttonClicked(argButtonName) {
      */
     function displayResult(argPlayerMove, argComputerMove) {
         console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
-        if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
+
+        const playerMoveName = String(argPlayerMove);
+        const computerMoveName = String(argComputerMove);
+
+        if (playerMoveName === 'papier' && computerMoveName === 'kamień') {
             printMessage('Wygrywasz!');
-        } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
+        } else if (playerMoveName === 'kamień' && computerMoveName === 'nożyce') {
             printMessage('Wygrywasz!');
-        } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
+        } else if (playerMoveName === 'nożyce' && computerMoveName === 'papier') {
             printMessage('Wygrywasz!');
-        } else if (argPlayerMove == argComputerMove) {
+        } else if (playerMoveName === computerMoveName) {
             printMessage('Remis!');
         } else {
             printMessage('Przegrywasz :(');
         }
-        printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+        printMessage('Zagrałem ' + computerMoveName + ', a Ty ' + playerMoveName);
     }
 
     playerMove = argButtonName;
